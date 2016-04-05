@@ -1,0 +1,5 @@
+alias ls="ls -lah"
+alias ..="cd .."
+alias ...="cd ..."
+alias ....="cd ...."
+alias .....="cd ....."
