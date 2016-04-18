@@ -1,14 +1,15 @@
-export PATH="$HOME/.linuxbrew/bin:$PATH"
-export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
-export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
-export EDITOR='vim'
 if [ "$(uname)" == "Darwin" ]; then
 export PYTHONPATH=/Applications/QGIS.app/Contents/Resources/python:$PYTHONPATH
 export PATH=/Library/Frameworks/GDAL.framework/Programs:$PATH
 export GISBASE=/Applications/GRASS-6.4.app/Contents/MacOS/
 export DOCKER_HOST=tcp://192.168.59.103:2376
 export DOCKER_CERT_PATH=~/.boot2docker/certs/boot2docker-vm
+else
+export PATH="$HOME/.linuxbrew/bin:$PATH"
+export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
+export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
 fi
 export DOCKER_TLS_VERIFY=1
 export CLICOLOR=1
+export EDITOR='vim'
 source ~/.bash_secret
