@@ -10,4 +10,3 @@ for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
     unset file;
 
 source /usr/local/bin/virtualenvwrapper.sh
-source ~/.bash_secret
