@@ -19,8 +19,11 @@ sudo apt-get install python-qgis
 sudo apt-get install qgis-plugin-grass
 sudo apt-get install r-base
 sudo apt-get install rstudio
+sudo apt-get install screen
 sudo apt-get install tree
 
 # Clean up
 sudo apt-get autoremove
 
+# Install R packages
+Rscript ~/workspace/dotfiles/install/R_pkgs.R

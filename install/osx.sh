@@ -36,3 +36,5 @@ brew install R
 brew install rstudio
 
 brew cleanup
+
+Rscript ~/workspace/dotfiles/install/R_pkgs.R
