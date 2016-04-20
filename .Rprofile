@@ -2,7 +2,7 @@
 
 local({
     r <- getOption("repos")
-    r["CRAN"] <- "http://cran.r-project.org" 
+    r["CRAN"] <- "https://cran.r-project.org" 
     options(repos = r)
 })
 
