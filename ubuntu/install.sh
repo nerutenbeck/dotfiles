@@ -1,4 +1,4 @@
-#! /usr/bin
+#! /usr/bin/env bash
 
 # Add keyservers for R and QGIS
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
@@ -18,7 +18,7 @@ sudo apt-get install qgis
 sudo apt-get install python-qgis
 sudo apt-get install qgis-plugin-grass
 sudo apt-get install r-base
-sudo apt-get install rstudio-server
+sudo apt-get install rstudio
 sudo apt-get install tree
 
 # Clean up
