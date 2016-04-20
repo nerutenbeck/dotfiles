@@ -34,7 +34,10 @@ brew install git-lfs
 brew tap homebrew/science
 brew install R
 brew install rstudio
+brew install screen
+brew install tree
 
 brew cleanup
 
+# Install R packages
 Rscript ~/workspace/dotfiles/install/R_pkgs.R
