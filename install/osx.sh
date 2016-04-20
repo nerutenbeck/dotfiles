@@ -23,6 +23,9 @@ brew install bash
 brew tap homebrew/versions
 brew install bash-completion
 
+brew tap caskroom/cask
+brew install brew-cask
+
 # Install `wget` with IRI support.
 brew install wget --with-iri
 
@@ -36,6 +39,18 @@ brew install R
 brew install rstudio
 brew install screen
 brew install tree
+brew cask install iterm2
+brew cask install dropbox
+
+# Install QGIS
+brew install gdal --enable-unsupported --with-libkml --with-mysql
+brew cask install xquartz
+brew tap osgeo/osgeo4mac
+brew install qgis-26
+brew linkapps qgis-26
+
+# Install python dependencies for QGIS
+pip install numpy scipy matplotlib processing psycopg2
 
 brew cleanup
 
