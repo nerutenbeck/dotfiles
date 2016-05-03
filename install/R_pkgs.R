@@ -1,6 +1,6 @@
 #! /usr/bin/Rscript
 
-package_list <- c("argparse"
+package_list <- c("argparser"
                   "caret",
                   "devtools",
                   "dplyr",
