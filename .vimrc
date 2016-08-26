@@ -22,6 +22,7 @@ Plugin 'reinh/vim-makegreen'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
 Plugin 'jmcantrell/vim-virtualenv'
+Plugin 'zirrostig/vim-schlepp'
 
 call vundle#end()            " required
 
@@ -56,5 +57,9 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:solarized_termcolors=256
 map <leader>n :NERDTreeToggle<CR>
+vmap <unique> <up>    <Plug>SchleppUp
+vmap <unique> <down>  <Plug>SchleppDown
+vmap <unique> <left>  <Plug>SchleppLeft
+vmap <unique> <right> <Plug>SchleppRight
 
 colorscheme solarized
