@@ -1,12 +1,17 @@
 #! /usr/bin/Rscript
 
-package_list <- c("dplyr",
-                  "tidyr",
-                  "readr",
+package_list <- c("argparser"
+                  "caret",
+                  "devtools",
+                  "dplyr",
                   "ggplot2",
-                  "rmarkdown",
                   "knitr",
                   "pander",
-                  "rstan")
+                  "readr",
+                  "roxygen2",
+                  "rmarkdown",
+                  "rstan",
+                  "tidyr")
 
-install.packages(package_list)
+install.packages(package_list, 
+                 dependencies = c("depends", "suggests"))
