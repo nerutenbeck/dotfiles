@@ -6,8 +6,8 @@ install.packages(
     "tidybayes",
     "bayesplot",
     "brms"
+    "rmarkdown"
   )
 )
 
-remotes::install_github("stan-dev/cmdstanr")
-remotes::install_github("stan-dev/posterior")
+install.packages("cmdstanr", repos = c("https://mc-stan.org/r-packages/", getOption("repos")))
