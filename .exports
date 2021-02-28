@@ -9,4 +9,5 @@ fi
 export DOCKER_TLS_VERIFY=1
 export CLICOLOR=1
 export EDITOR='vim'
+export CMDSTAN=/home/nathan/.cmdstan/cmdstan-2.26.1
 source ~/.bash_secret
