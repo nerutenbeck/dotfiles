@@ -1,10 +1,12 @@
 install.packages(
-  "tidyverse",
-  "devtools",
-  "sf",
-  "tidybayes",
-  "bayesplot",
-  "brms"
+  c(
+    "tidyverse",
+    "devtools",
+    "sf",
+    "tidybayes",
+    "bayesplot",
+    "brms"
+  )
 )
 
 remotes::install_github("stan-dev/cmdstanr")
