@@ -1,7 +1,22 @@
 alias ls="ls -lah"
 alias ..="cd .."
-alias ...="cd ..."
-alias ....="cd ...."
-alias .....="cd ....."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias launch-default-aws="workon st_cloud &&\
+    cd ~/workspace/st_cloud &&\
+    python -m st_cloud.aws.launch_instance \
+    -n nathan -t c5.2xlarge -v 100 &&\
+    deactivate"
+alias launch-medium-aws="workon st_cloud &&\
+    cd ~/workspace/st_cloud &&\
+    python -m st_cloud.aws.launch_instance \
+    -n nathan-medium -t c5.4xlarge -v 100 &&\
+    deactivate"
+alias launch-big-aws="workon st_cloud &&\
+    cd ~/workspace/st_cloud &&\
+    python -m st_cloud.aws.launch_instance \
+    -n nathan-big -t c5.9xlarge -v 100 &&\
+    deactivate"
 alias python="python3"
 alias pip="pip3"
