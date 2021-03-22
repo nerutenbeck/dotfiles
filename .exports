@@ -9,3 +9,6 @@ fi
 export CLICOLOR=1
 export EDITOR='vim'
 export CMDSTAN=/home/nathan/.cmdstan/cmdstan-2.26.1
+export WORKON_HOME=~/.virtualenvs
+VIRTUALENVWRAPPER_PYTHON='/usr/bin/python3'
+source /usr/local/bin/virtualenvwrapper.sh
